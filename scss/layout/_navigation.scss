@@ -1,0 +1,64 @@
+.navigation {
+  font-size: 1.5rem;
+  border-bottom: 1px solid #eee;
+  margin: 0;
+
+  &__text {
+    background-color: $color-primary;
+    color: #000;
+    text-align: center;
+    padding: 1.2rem 0;
+
+    a {
+      color: #000;
+      cursor: pointer;
+      &:hover {
+        color: white;
+      }
+    }
+  }
+  &__nav {
+    display: flex;
+    justify-content: space-around;
+
+    padding: 2rem 0;
+    @media only screen and (max-width: $bp-small) {
+      display: none;
+    }
+    a {
+      color: $color-grey-light;
+      text-decoration: none;
+      &:hover {
+        color: $color-primary;
+      }
+    }
+  }
+  &__logo {
+    height: 2rem;
+    width: 2rem;
+  }
+  &__items {
+    display: flex;
+    list-style: none;
+    color: $color-grey-light;
+    gap: 4rem;
+    li {
+      margin-left: 1.2rem;
+    }
+  }
+  &__link {
+    a {
+      text-decoration: none;
+      margin-left: 1.3rem;
+    }
+
+    &--login {
+      color: $color-grey-light;
+    }
+    &--register {
+      color: $color-primary;
+      border: 2px solid $color-primary;
+      padding: 0.7rem;
+    }
+  }
+}

@@ -1,0 +1,329 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+@media only screen and (max-width: 68.75em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  margin: 0 5rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .container {
+    margin: 0;
+    font-size: 4.5rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .container {
+    margin: 0;
+  }
+}
+
+.sectionhero {
+  text-align: center;
+  margin: 7rem 7rem;
+  padding-bottom: 7rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .sectionhero {
+    margin: 2rem 3rem;
+  }
+}
+.sectionhero__text {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.3rem;
+  padding-bottom: 3rem;
+}
+@media only screen and (max-width: 37.5em) {
+  .sectionhero__text {
+    grid-template-columns: 1fr;
+  }
+}
+.sectionhero__left {
+  font-size: 3rem;
+}
+.sectionhero__right {
+  font-size: 1.3rem;
+  padding-top: 1.2rem;
+}
+.sectionhero--img {
+  width: 70vh;
+}
+@media only screen and (max-width: 56.25em) {
+  .sectionhero--img {
+    width: 50vh;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .sectionhero--img {
+    width: 30vh;
+  }
+}
+
+.navigation {
+  font-size: 1.2rem;
+  border-bottom: 1px solid #eee;
+  margin: 0;
+}
+.navigation__text {
+  background-color: #129d12;
+  color: #000;
+  text-align: center;
+  padding: 1.2rem 0;
+}
+.navigation__text a {
+  color: #000;
+}
+.navigation__nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem 0;
+}
+.navigation__logo {
+  height: 1.7rem;
+  width: 1.7rem;
+}
+.navigation__items {
+  display: flex;
+  list-style: none;
+  color: #c5b6b6;
+}
+.navigation__items li {
+  margin-left: 1.2rem;
+}
+.navigation__link a {
+  text-decoration: none;
+  margin-left: 1.3rem;
+}
+.navigation__link--login {
+  color: #c5b6b6;
+}
+.navigation__link--register {
+  color: #129d12;
+  border: 2px solid #129d12;
+  padding: 0.7rem;
+}
+
+.btn, .btn:link, .btn:visited {
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: none;
+}
+.btn--start {
+  background-color: #129d12;
+  color: #fff;
+  border: 2px solid #129d12;
+  padding: 1.2rem;
+  margin-top: 2rem;
+}
+.btn--feature {
+  background-color: transparent;
+  color: #129d12;
+  border: 2px solid #129d12;
+  border-radius: 1rem;
+}
+.btn--interactionstart {
+  background-color: transparent;
+  border: 2px solid #000;
+}
+
+.sectionlogo {
+  margin-bottom: 4rem;
+}
+.sectionlogo__heading--secondary {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+  padding: 2rem 0;
+}
+.sectionlogo__heading--secondary span {
+  color: #129d12;
+}
+.sectionlogo__logo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.sectionlogo__logo--img {
+  width: 6rem;
+  height: 6rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .sectionlogo__logo--img {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .sectionlogo__logo--img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+.sectionlogo__rating {
+  background-color: #129d12;
+  color: #fff;
+  font-size: 1.4rem;
+  height: 120px;
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+@media only screen and (max-width: 37.5em) {
+  .sectionlogo__rating {
+    font-size: 1.2rem;
+  }
+}
+.sectionlogo__rating li {
+  list-style: none;
+  padding: 1.3rem 0;
+  text-align: center;
+}
+.sectionlogo__rating--rate {
+  font-size: 3rem;
+}
+
+.sectioninfo {
+  display: grid;
+  align-items: center;
+  gap: 1.2rem;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+  margin-bottom: 4rem;
+}
+@media only screen and (max-width: 37.5em) {
+  .sectioninfo {
+    grid-template-columns: 1fr;
+    margin-left: 3rem;
+  }
+}
+.sectioninfo__img {
+  width: 65vh;
+}
+@media only screen and (max-width: 56.25em) {
+  .sectioninfo__img {
+    width: 20vh;
+  }
+}
+.sectioninfo__text {
+  text-align: center;
+}
+.sectioninfo__text--tertiary {
+  font-size: 2.4rem;
+  padding: 1.2rem 0;
+}
+@media only screen and (max-width: 56.25em) {
+  .sectioninfo__text--tertiary {
+    font-size: 2rem;
+  }
+}
+.sectioninfo__text--paragrapgh {
+  font-size: 1.4rem;
+  padding: 1.2rem 0;
+}
+@media only screen and (max-width: 56.25em) {
+  .sectioninfo__text--paragrapgh {
+    font-size: 1.2rem;
+  }
+}
+
+.sectionfeature {
+  height: 400px;
+}
+.sectionfeature__heading {
+  font-size: 2rem;
+  padding: 2rem 0;
+  text-align: center;
+}
+.sectionfeature__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  font-size: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 1.2rem;
+       column-gap: 1.2rem;
+}
+.sectionfeature__container--text {
+  background-color: black;
+  border-radius: 2rem;
+  color: #fff;
+  width: 25rem;
+  padding: 3rem 3rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .sectionfeature__container--text {
+    margin: 0 3rem;
+    width: 23rem;
+  }
+}
+.sectionfeature__container--text--p {
+  padding: 3rem 0;
+}
+.sectionfeature__container--text--h3 {
+  padding-top: 3rem;
+}
+.sectionfeature__container--icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.interaction {
+  background-color: pink;
+  height: 1200px;
+}
+.interaction__heading {
+  text-align: center;
+  padding: 1.3rem;
+  font-size: 2.4rem;
+}
+.interaction__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  gap: 1.3rem;
+  justify-content: center;
+  align-items: center;
+}
+.interaction__grid--container {
+  border: 1px solid #c5b6b6;
+  border-radius: 1.9rem;
+  padding: 3rem;
+  width: 24rem;
+}
+.interaction__grid--container--h4 {
+  font-size: 2rem;
+  padding: 0.3rem 0;
+}
+.interaction__grid--container--p {
+  color: #c5b6b6;
+  font-size: 1.4rem;
+  padding-bottom: 1.3rem;
+  border-bottom: 1px solid #c5b6b6;
+  margin-left: 1.7rem;
+}
+.interaction__grid--container--p2 {
+  font-size: 1.5rem;
+  padding: 1.3rem 0;
+  margin-bottom: 2rem;
+}/*# sourceMappingURL=main.css.map */

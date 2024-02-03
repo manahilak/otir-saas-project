@@ -1,0 +1,40 @@
+.sectionhero {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 7rem 0;
+
+  @media only screen and (max-width: $bp-small) {
+    grid-template-columns: 1fr;
+    row-gap: 3rem;
+  }
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media only screen and (max-width: $bp-medium) {
+      margin: 0;
+    }
+    &--heading {
+      font-size: 5rem;
+      width: 33rem;
+    }
+    &--paragraph {
+      font-size: 1.7rem;
+      width: 32rem;
+      padding: 1.3rem;
+    }
+  }
+  &__img {
+    width: 120px;
+  }
+  &--img {
+    width: 75vh;
+    @media only screen and (max-width: $bp-medium) {
+      width: 37vh;
+    }
+    @media only screen and (max-width: $bp-small) {
+      width: 67vh;
+    }
+  }
+}

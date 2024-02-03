@@ -1,0 +1,46 @@
+.btn {
+  & {
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: none;
+    transition: transform 0.3s ease;
+    &:hover,
+    &:link,
+    &:visited {
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+      transform: translateY(5px);
+    }
+  }
+  &--start {
+    background-color: $color-primary;
+    color: #fff;
+    border: 2px solid $color-primary;
+    padding: 1.2rem;
+    margin-top: 2rem;
+  }
+  &--feature {
+    background-color: transparent;
+    color: $color-primary;
+    border: 2px solid $color-primary;
+    border-radius: 1rem;
+    margin-top: 2.5rem;
+    @media only screen and (max-width: $bp-small) {
+      padding: 1.5rem;
+    }
+  }
+  &--interactionstart {
+    background-color: transparent;
+    border: 2px solid #000;
+  }
+  &--courses {
+    margin: 0 auto;
+    background-color: transparent;
+    color: $color-primary;
+    border: 2px solid $color-primary;
+    border-radius: 1rem;
+    @media only screen and (max-width: $bp-small) {
+      padding: 1.5rem;
+    }
+  }
+}
